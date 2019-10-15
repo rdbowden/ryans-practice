@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+   <title>Xmas Trees</title>
+    <style>
+       
+       body {
+  background-color: #eee;
+  font-family: sans-serif;
+}
+
+
+
+li {
+  list-style: none;
+}
+
+a {
+  color: 0c601a;
+  text-decoration: none;
+}
+
+
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.logo {
+  width: 60vw;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+       nav {
+  font-weight: 400;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+    background-color: transparent;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+.nav-link {
+    color: green;
+}
+.nav-link:hover {
+    color: darkgreen;
+}
+h2{
+    color:green;
+    
+}
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 100px;
+}
+
+#hero > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+#hero input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#hero input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 50px;
+  margin: 15px 0;
+  border: 0;
+  background-color: green;
+}
+
+#hero input[type="submit"]:hover {
+  background-color: darkgreen;
+  transition: background-color 1s;
+}
+
+@media (max-width: 650px) {
+  #hero {
+    margin-top: 120px;
+  }
+}
+#features {
+  margin-top: 30px;
+}
+
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: green;
+}
+
+@media (max-width: 550px) {
+  #features .icon {
+    display: none;
+  }
+}
+
+#features .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+@media (max-width: 550px) {
+  #features .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  #features {
+    margin-top: 0;
+  }
+}
+#about-us {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#about-us> iframe {
+  max-width: 560px;
+  width: 100%;
+}  
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 3);
+  margin: 10px;
+  border: 1px solid green;
+  border-radius: 3px;
+}
+.product > .level {
+  background-color: #ddd;
+  color: green;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.product > h2 {
+  margin-top: 15px;
+  color: green;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: green;
+  font-weight: 400;
+}
+
+.product > button:hover {
+  background-color: darkgreen;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+    
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <img id="header-img" src="LogoMakr_6dgItf.png"> 
+            
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#about-us">About US</a></li>
+                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+<section id="hero">
+<h2>The best tree for the best Xmas</h2>
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+<input name="email" id="email" type="email" placeholder="Enter your email address" required/>
+<input id="submit" class="btn btn-primary" type="submit" value="Submit">
+</form>
+</section>
+</div>
+<div class="container">
+        <section id="features">
+        <div class="grid">
+        <div class="icon"><i class="fas fa-3x fa-tree">  </i></i></div>
+        <div class="desc">
+        <h2>100% pesticide free</h2>
+        <p>
+        Zero toxic pesticides used in the production of the trees
+        </p>
+        </div>
+        </div>
+        <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-truck">  </i></div>
+        <div class="desc">
+        <h2>24hr Shipping</h2>
+        <p>
+        Shipped within 24hrs of the order being placed
+        </p>
+        </div>
+        </div>
+        <div class="grid">
+        <div class="icon"><i class="far fa-3x fa-grin-alt">  </i></div>
+        <div class="desc">
+        <h2>Quality Assurance</h2>
+        <p>
+        Only the best trees are shipped, if you're not satisfied we will give you your money back.
+        </p>
+        </div>
+        </div>
+        <section id="about-us">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/-_Oioj61gAs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        </section>
+        <section id="pricing">
+        <div class="product" id="6ft">
+                <div class="level">6ft tree</div>
+                <h2>£30</h2>
+                <ol>
+                        <li>Norwegian Blue</li>
+                        <li>6ft tree</li>
+                        <li>Good needle retention</li>   
+                </ol>
+                <button class="btn">Select</button>
+                </div>
+                <div class="product" id="7ft">
+                <div class="level">7ft Tree</div>
+                <h2>£40</h2>
+                <ol>
+                <li>Norwegian Blue</li>
+                <li>7ft tree</li>
+                <li>Good needle retention</li>   
+                </ol>
+                <button class="btn">Select</button>
+                </div>
+                <div class="product" id="8ft">
+                <div class="level">8ft Tree</div>
+                <h2>£50</h2>
+                <ol>
+                <li>Norwegian Blue</li>
+                <li>8ft tall</li>
+                <li>Good needle retention</li>
+                </ol>
+                <button class="btn">Select</button>
+                </div>
+                </section>
+
+</section>
+
+
+
+<script src="https://kit.fontawesome.com/a59511b9e5.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
