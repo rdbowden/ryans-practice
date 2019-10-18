@@ -1,0 +1,72 @@
+body {
+background: url(heropic.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-color:white;
+text-align: center;
+font-family: "roboto";
+color: white;
+height: 100vh;
+}
+
+#navbar {
+    background-color: white;
+}
+
+#navbar :hover {
+    color: rgb(51, 42, 44);
+}
+
+#hero {
+    margin-top: 0px;
+    display: block;
+    height: 100vh;
+}
+
+h1 {
+    padding-top: 10%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 8rem;
+    color:  rgb(51, 42, 44);
+    border: thin;
+    border-color: black;
+
+}
+
+p {
+    color: rgb(51, 42, 44);
+    font-size: 4rem;
+    font-style: italic;
+}
+a {
+    color: white;
+}
+a :visited 
+{
+    text-decoration: none; 
+}
+#fa {
+    color: lightgrey;
+}
+#fa :hover {
+    color: rgb(51, 42, 44);
+}
+
+ul {
+    list-style-type: none;
+    }
+@media (max-width: 650px) {
+    #hero {
+      font-size-adjust: inherit;
+      height: 90vh;
+      display: block;
+    }
+  }
+
+@media (max-width: 1050px) {
+    #hero {
+        height: 90vh;
+    }
+}
